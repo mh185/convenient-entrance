@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">哈哈哈</header>
+    <div class="content">
+        <div class="left">
+            <div class="list">
+                <a class="li" href="http://39.98.209.203/manager/">后台管理线上地址</a>
+                <a class="li" href="https://cn.vuejs.org/v2/guide/index.html">Vue.js</a>
+                <a class="li" href="https://router.vuejs.org/zh/">Vue Router</a>
+                <a class="li" href="https://github.com/mh185/">GitHub</a>
+                <a class="li" href="http://47.108.86.202:8888/tree/tourism.git/develop/web">仓库</a>
+                <a class="li" href="https://www.kancloud.cn/yunye/axios/234845/">Axios</a>
+                <a class="li" href="https://www.runoob.com/js/js-intro.html">Js菜鸟教程</a>
+                <a class="li" href="https://ly.liaoin.com/swagger-ui.html?urls.primaryName=gov#/">swagger</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="ul">
+              <a class="li" href="http://www.baidu.com">百度一下</a>
+              <a class="li" href="http://www.jingdon.com">京东</a>
+              <a class="li" href="http://www.taobao.com">淘宝</a>
+              <a class="li" href="https://steamdb.info/upcoming/free/">steamDB</a>
+              <a class="li" href="https://lol.qq.com/act/a20200922competition/index.html?e_code=507042">LOL</a>
+              <a class="li" href="https://www.ali213.net/">游侠网</a>
+              <a class="li" href="https://www.dytt8.net/index.htm">电影天堂</a>
+            </div>
+        </div>
+    </div>
+        <!-- <div id="div">
+            <ul>
+                <li><img src="./-3e2d0a3d11722acf.jpg" alt=""></li>
+                <li><img src="./19f1c11285372f3b(1).jpg" alt=""></li>
+                <li><img src="./3ce4ad061d8c2be7.jpg" alt=""></li>
+                <li><img src="./IMG_20190414_200652.jpg" alt=""></li>
+            </ul>
+        </div> -->
+</body>
+<script>
+    window.onload=function()
+    {
+        var oDiv=document.getElementById('div');
+        var oUl=oDiv.getElementsByTagName('ul')[0];
+        var aLi=oUl.getElementsByTagName('li');
+        var speed=-2;
+        oUl.innerHTML=oUl.innerHTML+oUl.innerHTML;
+        oUl.style.width=aLi[0].offsetWidth*aLi.length+'px';
+        function move(){
+            if(oUl.offsetLeft<-oUl.offsetWidth/2)
+            {
+                oUl.style.left='0';
+            }
+            if(oUl.offsetLeft>0)
+            {
+                oUl.style.left=-oUl.offsetWidth/2+'px';
+            }
+            oUl.style.left=oUl.offsetLeft+speed+'px';
+        }
+
+        var timer=setInterval(move,30);
+        oDiv.onmousemove=function()
+        {
+            clearInterval(timer);
+        }
+        oDiv.onmouseout=function()
+        {
+            timer=setInterval(move,30);
+        };
+        document.getElementsByTagName('a')[0].onclick=function()
+        {
+            speed=-2;
+        };
+        document.getElementsByTagName('a')[1].onclick=function()
+        {
+            speed=2;
+        };
+    };
+</script>
+</html>
+<style>
+    html body{
+        margin: 0;
+        padding: 0;
+        background-color: darkcyan;
+    }
+    ul li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .header{
+        width: 100%;
+        height: 50px;
+        background-color: skyblue;
+    }
+    .content{
+        width: 98%;
+        height: 515px;
+        margin: 0 auto;
+        background-image: url(./海边女孩.jpg);
+    }
+    .content .left{
+        width: 50%;
+        height: 450px;
+        border-radius: 50px;
+        margin-top: 25px;
+        margin-left: 15px;
+        float: left;
+        opacity:0.4;
+        background-color: yellow;
+    }
+    .content .left .list{
+        width: 80%;
+        margin: 25px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .content .left .list .li{
+        margin-left: 30px;
+        font-size: 18px;
+        color: black;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .content .left .list .li:hover{
+        color: blue;
+    }
+    .content .right{
+        width: 25%;
+        height: 400px;
+        margin-top: 50px;
+        border-radius: 50px;
+        margin-right: 25px;
+        float: right;
+        opacity:0.4;
+        background-color: gainsboro;
+    }
+    .content .right .ul{
+        margin-top: 25px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        overflow:auto;
+        margin-left: 40px;
+    }
+    .content .right .ul .li{
+        width: 300px;
+        font-size: 18px;
+        color: black;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .content .right .ul .li:hover{
+        background-color: yellow;
+    }
+    .foot{
+        width: 100%;
+        height: 155px;
+        margin-top: -15px;
+        background-color: black;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    #div{
+        width: 800px;
+        height: 155px;
+        margin: 0 auto;
+        position: relative;
+        /* background-color: red; */
+        overflow: hidden;
+    }
+    #div ul{
+        margin-top: -15px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    #div ul li{
+        float: left;
+        width: 200px;
+        height: 155px;
+        list-style: none;
+    }
+</style>
