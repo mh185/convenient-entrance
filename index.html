@@ -33,60 +33,16 @@
         </div>
     </div>
         <div class="foot">
-            <!-- <ul>
-                <li><img src="./-3e2d0a3d11722acf.jpg" alt=""></li>
-                <li><img src="./19f1c11285372f3b(1).jpg" alt=""></li>
-                <li><img src="./3ce4ad061d8c2be7.jpg" alt=""></li>
-                <li><img src="./IMG_20190414_200652.jpg" alt=""></li>
-            </ul> -->
         </div>
 </body>
 <script>
-    window.onload=function()
-    {
-        var oDiv=document.getElementById('div');
-        var oUl=oDiv.getElementsByTagName('ul')[0];
-        var aLi=oUl.getElementsByTagName('li');
-        var speed=-2;
-        oUl.innerHTML=oUl.innerHTML+oUl.innerHTML;
-        oUl.style.width=aLi[0].offsetWidth*aLi.length+'px';
-        function move(){
-            if(oUl.offsetLeft<-oUl.offsetWidth/2)
-            {
-                oUl.style.left='0';
-            }
-            if(oUl.offsetLeft>0)
-            {
-                oUl.style.left=-oUl.offsetWidth/2+'px';
-            }
-            oUl.style.left=oUl.offsetLeft+speed+'px';
-        }
-
-        var timer=setInterval(move,30);
-        oDiv.onmousemove=function()
-        {
-            clearInterval(timer);
-        }
-        oDiv.onmouseout=function()
-        {
-            timer=setInterval(move,30);
-        };
-        document.getElementsByTagName('a')[0].onclick=function()
-        {
-            speed=-2;
-        };
-        document.getElementsByTagName('a')[1].onclick=function()
-        {
-            speed=2;
-        };
-    };
 </script>
 </html>
 <style>
     html body{
         margin: 0;
         padding: 0;
-        background-color: darkcyan;
+        background-color: snow;
     }
     ul li{
         list-style: none;
@@ -97,11 +53,14 @@
     .header{
         width: 100%;
         height: 50px;
-        background-color: skyblue;
+        line-height: 50px;
+        color: green;
+        font-size: 20px;
+        text-align: center;
     }
     .content{
         width: 98%;
-        height: 515px;
+        height: 700px;
         margin: 0 auto;
         background-image: url(./image/timg.jpg);
         background-size: 100% 100%;
@@ -165,7 +124,6 @@
         width: 100%;
         height: 155px;
         margin-top: -15px;
-        background-color: black;
     }
     img{
         width: 200px;
