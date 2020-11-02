@@ -5,6 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    html{
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        background-color: snow;
+    }
+    body{
+        font-size: 1.6rem;
+    }
+    ul li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .header{
+        width: 100%;
+        height: 5rem;
+        line-height: 5rem;
+        color: green;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .content{
+        width: 98%;
+        height: 70rem;
+        margin: 0 auto;
+        background-image: url(./image/back3.jpg);
+        background-size: 100% 100%;
+        position: relative;
+    }
+    .content .lookImage{
+        position: absolute;
+        top: 50%;
+        left: 55.5%;
+        width: 100%;
+        height: 100%;
+    }
+    .content .left{
+        width: 50%;
+        height: 45rem;
+        border-radius: 5rem;
+        margin-top: 2.5rem;
+        margin-left: 1.5rem;
+        float: left;
+        opacity:0.4;
+        background-color: yellow;
+    }
+    .content .left .list{
+        width: 80%;
+        margin: 2.5rem auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .content .left .list .li{
+        margin-left: 3rem;
+        font-size: 1.8rem;
+        color: black;
+        margin-top: 1.5rem;
+        font-weight: bold;
+    }
+    .content .left .list .li:hover{
+        color: blue;
+    }
+    .content .right{
+        width: 25%;
+        height: 40rem;
+        margin-top: 5rem;
+        border-radius: 5rem;
+        margin-right: 2.5rem;
+        float: right;
+        opacity:0.4;
+        background-color: gainsboro;
+    }
+    .content .right .ul{
+        margin-top: 2.5rem;
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+        overflow:auto;
+        margin-left: 4rem;
+    }
+    .content .right .ul .li{
+        width: 30rem;
+        font-size: 1.8rem;
+        color: black;
+        margin-top: 1.5rem;
+        font-weight: bold;
+    }
+    .content .right .ul .li:hover{
+        background-color: yellow;
+    }
+    .foot{
+        width: 98%;
+        height: 14.5rem;
+        margin: 0 auto;
+        background-image: url('./image/foot.jpg');
+        background-size: 100% 100%;
+    }
+    .foot .right{
+        float: right;
+        margin-right: 5rem;
+        margin-top: 1rem;
+    }
+</style>
 <body>
     <header class="header">幺叭伍得欢乐时光</header>
     <div class="content">
@@ -47,106 +154,3 @@
 <script>
 </script>
 </html>
-<style>
-    html body{
-        margin: 0;
-        padding: 0;
-        background-color: snow;
-    }
-    ul li{
-        list-style: none;
-    }
-    a{
-        text-decoration: none;
-    }
-    .header{
-        width: 100%;
-        height: 50px;
-        line-height: 50px;
-        color: green;
-        font-size: 20px;
-        text-align: center;
-    }
-    .content{
-        width: 98%;
-        height: 700px;
-        margin: 0 auto;
-        background-image: url(./image/back3.jpg);
-        background-size: 100% 100%;
-        position: relative;
-    }
-    .content .lookImage{
-        position: absolute;
-        top: 50%;
-        left: 55.5%;
-        width: 250px;
-        height: 250px;
-    }
-    .content .left{
-        width: 50%;
-        height: 450px;
-        border-radius: 50px;
-        margin-top: 25px;
-        margin-left: 15px;
-        float: left;
-        opacity:0.4;
-        background-color: yellow;
-    }
-    .content .left .list{
-        width: 80%;
-        margin: 25px auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .content .left .list .li{
-        margin-left: 30px;
-        font-size: 18px;
-        color: black;
-        margin-top: 15px;
-        font-weight: bold;
-    }
-    .content .left .list .li:hover{
-        color: blue;
-    }
-    .content .right{
-        width: 25%;
-        height: 400px;
-        margin-top: 50px;
-        border-radius: 50px;
-        margin-right: 25px;
-        float: right;
-        opacity:0.4;
-        background-color: gainsboro;
-    }
-    .content .right .ul{
-        margin-top: 25px;
-        height: 350px;
-        display: flex;
-        flex-direction: column;
-        overflow:auto;
-        margin-left: 40px;
-    }
-    .content .right .ul .li{
-        width: 300px;
-        font-size: 18px;
-        color: black;
-        margin-top: 15px;
-        font-weight: bold;
-    }
-    .content .right .ul .li:hover{
-        background-color: yellow;
-    }
-    .foot{
-        width: 98%;
-        height: 145px;
-        margin: 0 auto;
-        background-image: url('./image/foot.jpg');
-        background-size: 100% 100%;
-    }
-    .foot .right{
-        float: right;
-        margin-right: 50px;
-        margin-top: 10px;
-    }
-</style>
