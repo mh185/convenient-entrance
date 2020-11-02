@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    html{
+        font-size: 10px;
+    }
+    .content{
+        background-image: url('../image/back.jpg');
+    }
+    .header{
+        text-align: center;
+        color: violet;
+    }
+    .login{
+        width: 65rem;
+        height: 25rem;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        border: 0.1rem solid black;
+    }
+    .login .inputText{
+        width: 60rem;
+        height: 5rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .btn{
+        width: 62rem;
+        height: 5rem;
+        margin-top: 4rem;
+    }
+    .btn .btnL{
+        width: 10rem;
+        height: 5rem;
+        background-color: springgreen;
+        margin-left: 3rem;
+    }
+    .btn .btnR{
+        width: 20rem;
+        height: 5rem;
+        background-color: red;
+        float: right;
+    }
+</style>
 <body class="content">
     <h2 class="header">需要输入点东西才能查看</h2>
     <div class="login">
@@ -41,44 +84,4 @@
         oId.style.display = 'none'
     }
 </script>
-<style>
-    .content{
-        background-image: url('../image/back.jpg');
-    }
-    .header{
-        text-align: center;
-        color: violet;
-    }
-    .login{
-        width: 650px;
-        height: 250px;
-        position: absolute;
-        top: 20%;
-        left: 35%;
-        border: 1px solid black;
-    }
-    .login .inputText{
-        width: 600px;
-        height: 50px;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    .btn{
-        width: 620px;
-        height: 50px;
-        margin-top: 40px;
-    }
-    .btn .btnL{
-        width: 100px;
-        height: 50px;
-        background-color: springgreen;
-        margin-left: 30px;
-    }
-    .btn .btnR{
-        width: 200px;
-        height: 50px;
-        background-color: red;
-        float: right;
-    }
-</style>
 </html>
