@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康码</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 10px;
+    }
+    body{
+        font-size: 1.6rem;
+        background-color: #FFF0F5;
+    }
+    ul li{
+        list-style: none;
+    }
+    .header{
+        width: 100%;
+        height: 7rem;
+        margin-top: 2rem;
+    }
+    .header .top{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        letter-spacing: 1rem;
+    }
+    .header .bottom{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .content{
+        width: 100%;
+    }
+    .content .top{
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+    .content ul{
+        margin-top: 1rem;
+    }
+    .content ul .top{
+        font-weight: bold;
+        width: 80%;
+        font-size: 1.4rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        height: 8rem;
+        background-color: #fff;
+    }
+    .content ul .top p{
+        margin-left: 1.5rem;
+        padding-top: 1rem;
+    }
+    .content ul li{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        height: 16rem;
+        background-color: #fff;
+    }
+    .content ul li p{
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-left: 1rem;
+        padding-top: 1rem;
+    }
+    .content .textInput{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        height: 2.8rem;
+        margin-top: 1rem;
+    }
+    .content ul li .radioS{
+        float: left;
+        margin-left: 1rem;
+    }
+    .content ul li .radioS .radio{
+        margin-top: 2rem;
+    }
+    .content ul li .radioS .txt{
+        margin-left: 1.5rem;
+    }
+    .content ul .bottom{
+        font-weight: bold;
+        width: 80%;
+        font-size: 1.4rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        height: 25rem;
+        background-color: #fff;
+    }
+    .content ul .bottom .checkbox{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .content ul .bottom .book{
+        width: 85%;
+        margin-left: 3.5rem;
+        margin-top: -2rem;
+    }
+    .btn{
+        margin: 0;
+        padding: 0;
+        border: 0px solid transparent;
+        background-color: #AFEEEE;
+        outline: none;
+        width: 75%;
+        height: 4rem;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        font-size: 1.6rem;
+        color: cadetblue;
+    }
+</style>
+<body>
+    <header class="header">
+        <p class="top">广西壮族自治区</p>
+        <p class="bottom">新冠肺炎疫情防控工作领导小组指挥部</p>
+    </header>
+    <form class="content">
+        <span class="top">请填写当前健康信息</span>
+        <ul>
+            <div class="top">
+               <p>*您当前体温？</p>
+               <input class="textInput" type="text" placeholder="请输入体温"> 
+            </div>
+            <li>
+                <p>14日内是否被诊断为新冠肺炎、疑似患者或被确认为密切接触者？</p>
+                <div class="radioS">
+                  <input class="radio" type="radio" name="a"><span class="txt">是</span><br>
+                  <input class="radio" type="radio" name="a"><span class="txt">否</span>
+                </div>
+            </li>
+            <li>
+                <p>14日内是否被诊断为新冠肺炎、疑似患者或被确认为密切接触者？</p>
+                <div class="radioS">
+                  <input class="radio" type="radio" name="b"><span class="txt">是</span><br>
+                  <input class="radio" type="radio" name="b"><span class="txt">否</span>
+                </div>
+            </li>
+            <li>
+                <p>14日内家庭成员是否有被诊断为新冠肺炎、疑似患者或被确认为密切接触者？</p>
+                <div class="radioS">
+                  <input class="radio" type="radio" name="c"><span class="txt">是</span><br>
+                  <input class="radio" type="radio" name="c"><span class="txt">否</span><br>
+                  <input class="radio" type="radio" name="c"><span class="txt">不确定</span>
+                </div>
+            </li>
+            <li>
+                <p>14日内是否与确诊的新冠肺炎患者、疑似患者或被确认为密切接触者有接触使？</p>
+                <div class="radioS">
+                  <input class="radio" type="radio" name="d"><span class="txt">是</span><br>
+                  <input class="radio" type="radio" name="d"><span class="txt">否</span><br>
+                  <input class="radio" type="radio" name="d"><span class="txt">不确定</span>
+                </div>
+            </li>
+            <li>
+                <p>是否连续14日居住在广西？</p>
+                <div class="radioS">
+                  <input class="radio" type="radio" name="e"><span class="txt">是</span><br>
+                  <input class="radio" type="radio" name="e"><span class="txt">否</span><br>
+                </div>
+            </li>
+            <li>
+                <p>14日内，您是否接触有发热和/或呼吸道症状的患者？</p>
+                <div class="radioS">
+                  <input class="radio" type="radio" name="f"><span class="txt">是</span><br>
+                  <input class="radio" type="radio" name="f"><span class="txt">否</span><br>
+                </div>
+            </li>
+            <li>
+                <p>14日内，您所居住社区是否曾报告有新冠肺炎病例？</p>
+                <div class="radioS">
+                  <input class="radio" type="radio" name="g"><span class="txt">是</span><br>
+                  <input class="radio" type="radio" name="g"><span class="txt">否</span><br>
+                </div>
+            </li>
+            <li>
+                <p>14日内，是否服用过退烧药、感冒药？</p>
+                <div class="radioS">
+                  <input class="radio" type="radio" name="h"><span class="txt">是</span><br>
+                  <input class="radio" type="radio" name="h"><span class="txt">否</span><br>
+                </div>
+            </li>
+            <li>
+                <p>过去14日内，您是否曾接受新型冠状病毒检查？</p>
+                <div class="radioS">
+                  <input class="radio" type="radio" name="i"><span class="txt">是</span><br>
+                  <input class="radio" type="radio" name="i"><span class="txt">否</span><br>
+                </div>
+            </li>
+            <div class="top">
+                <p>*此后14日内的居住地址，请填写详细地址</p>
+                <input class="textInput" type="text" placeholder="请输入您的家庭住址或入住的酒店名称"> 
+             </div>
+             <li>
+                <p>最近一个月内是否有入境记录？</p>
+                <div class="radioS">
+                  <input class="radio" type="radio" name="j"><span class="txt">是</span><br>
+                  <input class="radio" type="radio" name="j"><span class="txt">否</span><br>
+                </div>
+            </li>
+            <div class="bottom">
+                <input class="checkbox" type="checkbox" name="like" value="0">
+                <div class="book">
+                <span>抵达目的地后承诺立即向居住地或单位所在地居(村) 委会报到。</span><br><br>
+                <span>本人已阅知本申明卡所列选项，保证以上申报内容真实准确。如虚假申报内容，愿承担相应法律责任。</span><br><br>
+                <span>为提高查询服务效果，同意授权由广西壮族自治区政府运营的广西数字政务一体化平台使用注册信息，平台承诺将严格按规定保护您的个人信息安全。</span>
+                </div>
+             </div>
+        </ul>
+    </form>
+    <button class="btn">提交</button>
+</body>
+</html>
